@@ -27,7 +27,7 @@ class SqPainter(QWidget, Ui_Form):
             y = random.randint(0, h - d - 50)
             print(size)
             self.points.append((x, y, d))
-            qp.setBrush(QColor('yellow'))
+            qp.setBrush(QColor(random.randint(0, 0xffffff)))
             qp.drawEllipse(QRect(x, y, d, d))
             qp.end()
         self.do_paint = False
